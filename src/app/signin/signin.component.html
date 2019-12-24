@@ -1,0 +1,33 @@
+<section id="container">
+<div class="col-md-2 offset-3 image text-center ">
+    <img src="https://www.instagram.com/static/images/homepage/screenshot1.jpg/d6bf0c928b5a.jpg" alt="" class="image1">
+</div>
+
+<div class="col-md-3 offset-4 signupform text-center">
+    <h1>Instagram</h1>
+    <p>Sign up to see photos and videos from your friends.</p>
+    <button class="btn btn-primary btn-block">Login in with Facebook</button>
+    <p>Or</p>
+    <form action="" #form="ngForm" (ngSubmit)='submit(form)'>
+        <div class="form-group">
+            <input ngModel name="email"  type="text" class="form-control mt-2 mb-2" placeholder="mobile number or email" required>
+            <input ngModel name="fullname" type="text" class="form-control mt-2 mb-2" placeholder="fullname" required>
+            <input ngModel name="username" type="text" class="form-control mt-2 mb-2" placeholder="Username" required>
+            <input ngModel name="password" type="password" class="form-control mt-2 mb-2" placeholder="password" required>
+            <button class="btn btn-primary btn-block" [disabled]="!form.value">Sign up</button>
+            <p class="terms mt-2">By signing up, you agree to our <strong> Terms , Data Policy and Cookies Policy .</strong></p>
+        </div>
+    </form>
+    <div class="col-md-8 offset-2">
+        <form action="">
+            <div class="form-group">
+                <p>have an account
+                <a href="/login">Login</a>
+                </p>
+            </div>
+        </form>
+    </div>
+</div>
+</section>
+
+
